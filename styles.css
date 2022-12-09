@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #222;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 16px 0;
+  color: #fff;
+  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+p {
+  font-size: 16px;
+  margin: 16px 0;
+  color: #fff;
+  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+img {
+  max-width: 360px;
+  border: 4px solid #00ff00;
+  border-radius: 8px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+li {
+  font-size: 16px;
+  margin: 16px 0;
+  color: #222;
+  flex: 1;
+  border-right: 4px solid #00ff00;
+  background-color: #00ff00;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  filter: grayscale(0);
+  transition: filter 0.2s;
+}
+
+li:hover {
+  filter: grayscale(100%);
+}
+
+li:last-child {
+  border-right: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+a:hover {
+  color: #e1caee0;
+}
+.animated {
+  transition: all 0.15s ease;
+}
+
+.animated:hover {
+  transform: scale(1.15);
+  color: #00bcd4;
+}
+
+.animated-center {
+  transition: all 0.15s ease;
+}
+
+.animated-center:hover {
+  transform: scale(1.15);
+  color: #00bcd4;
+}
+@media (max-width: 992px) {
+  body {
+    background-color: #f5f5f5;
+    color: #222;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  li {
+    font-size: 20px;
+  }
+}
